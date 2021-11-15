@@ -1,22 +1,24 @@
 extends layout
 
 block content
-  div(class="ui cards")
-    div(class="ui card font-2em")
-      div(class="center aligned image")
-        em(data-emoji="relaxed" class="big")
-      div(class="content")
-        | 안녕하세요. 
-        span(class="ui inverted purple text")
-          | YJ Manager님!! <br>
-        | 알고 계시겠지만 저는 재원입니다. <br>
-        span(class="ui inverted purple text")
-          | YJ님
-        | 께 저를 소개하고 싶어 이렇게 프로파일을 만들었어요 ^^ (정말 고민 많이했어용) <br>
-        | 만든날은 21년 11월 14일이고, <br>
-        | 만든지 #{dayDiff} 일째가 되었네요.
-      div(id="btn-enter" class="font-button ui bottom attached button" style="font-family: 'Dongle';font-size: 1.5em;")
-        | 들어가기
-    //- button(class="ui primary basic button font-buttom") 저를 소개합니다
+  div(class="ui middle aligned center aligned grid")
+    div(class="column")
+      div(class="ui cards")
+        div(class="ui card font-2em")
+          div(class="image")
+            em(data-emoji="angel" class="large")
+          div(class="content")
+            | 안녕하세요. 
+            span(class="ui inverted purple text")
+              | YJ Manager님!! <br>
+            | 알고 계시겠지만 저는 재원입니다. <br>
+            span(class="ui inverted purple text")
+              | YJ님
+            | 께 저를 소개하고 싶어 이렇게 프로파일을 만들었어요 ^^ (정말 고민 많이했어용) <br>
+            | 만든날은 21년 11월 14일이고, <br>
+            | 만든지 #{dayDiff} 일째가 되었네요.
+          div(id="btn-enter" class="font-button ui bottom attached button" style="font-family: 'Dongle';font-size: 1.5em;")
+            | 들어가기
+        //- button(class="ui primary basic button font-buttom") 저를 소개합니다
 block scripts 
   script(src="/javascripts/common.js") 
