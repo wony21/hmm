@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   var day1 = moment('2021-11-14', 'YYYY-MM-DD');
   var today = moment();
   var diff = today.diff(day1, 'days');
-  
+  console.log(diff);
   const param = {
     dayDiff: diff,
   };

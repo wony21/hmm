@@ -10,7 +10,7 @@ a {
 }
 
 .custom {
-  font-size: 2em;
+  font-size: 2em !important;
 }
 
 .font-2em {
